@@ -1,0 +1,20 @@
+<div *ngIf = "!logado; else sair">
+  <form [formGroup]="formLogin">
+    <div class="form-row align-items-center">
+      <div class="col-auto my-1 teste">
+        <div class="form-check">
+          <label class="form-check-label espacamento">
+            <b>Acesse</b> sua conta
+          </label>
+          <input type="text" class="form-control-sm espacamento" formControlName="email" placeholder="Digite seu email">
+          <input type="password" class="form-control-sm espacamento" formControlName="password" placeholder="Digite sua senha">
+      
+          <button type="submit" class="btn-sm btn-primary acessar-conta espacamento" (click)="login()">Acessar</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<ng-template #sair pInput>
+    <button type="button" class="btn-sm btn-primary acessar-conta espacamento" (click)="logout()">Logout</button>
+  </ng-template>

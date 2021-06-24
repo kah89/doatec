@@ -1,0 +1,40 @@
+.acessar-conta {
+    margin-top: 90px;
+    background-color: #191970;
+    border: 0;
+    color: #fff;
+
+}
+
+.espacamento {
+    margin-right: 5px;
+    border: none;
+}
+
+@media screen and (min-width: 600px) {
+    .wrapper-header {
+        height: 15vh;
+    }
+    .menu-header li {
+        list-style: none;
+        display: inline;
+        margin: 10px;
+        top: 30px;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    .form-check {
+        margin-top: 30px;
+    }
+   
+}
+
+.form-row.align-items-center {
+    height: 266px;
+    margin-top: 40px;
+}
+
+.form-control{
+    margin-bottom: 5px;
+
+}

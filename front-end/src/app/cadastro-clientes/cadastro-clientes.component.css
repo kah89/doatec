@@ -1,0 +1,37 @@
+
+.cardForm {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.box-cadastro {
+    margin: 30px;
+    padding: 30px;
+}
+
+.cadastro {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    border-radius: 0;
+    outline: none;
+    height: 50px;
+}
+
+.btn-cadastro {
+    margin-top: 15px;
+    background-color: #4682B4;
+    font-weight: bold;
+    color: #ffff;
+    /* float: right; */
+}
+
+mat-form-field, input {
+    width: 100%;
+  }
+
+  .textCardForm {
+      color: #191970;
+        font-weight: bold;
+      margin-bottom: 15px;
+  }

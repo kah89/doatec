@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row box-cadastro">
+    <div class="col-12">
+
+      <mat-accordion *ngIf="doacoes.length > 0">
+        <h6>Suas Doações:</h6>
+        <mat-expansion-panel *ngFor="let doacao of doacoes">
+          <mat-expansion-panel-header> Item Doado: {{ doacao.title }} | Status: {{
+            doacao.status }}</mat-expansion-panel-header>
+          <p>Descrição: {{ doacao.description }}</p>
+          <p>Data Retirada: {{ doacao.collectionDate | date: 'dd/MM/yyyy' }}</p>
+          <mat-action-row>
+            <a mat-button color="primary" [routerLink]="['/editar', doacao.id]">Editar</a>
+            <button mat-button color="warn" (click)="onDelete(doacao.id)">Remover</button>
+          </mat-action-row>
+        </mat-expansion-panel>
+      </mat-accordion>
+      <p class="mat-body-1 text-center" *ngIf="doacoes.length <= 0">
+        Nenhuma doação cadastrada.
+      </p>
+    </div>
+  </div>
+</div>

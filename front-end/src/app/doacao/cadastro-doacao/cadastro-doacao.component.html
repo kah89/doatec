@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row m-2">
+    <p>Olá, {{ name }}</p>
+  </div>
+
+  <div class="row">
+    <h3 class="text-center">Quem estou ajudando</h3>
+  </div>
+
+
+  <div class=" row mt-3 mb-3">
+    <div class="col-sm">
+      <button mat-raised-button class="mat-focus-indicator mat-raised-button mat-button-base mat-primary btn-cadastro btn-sm" (click)="showMe()">Doar</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <mat-card [hidden]="isDisplayed" class="mb-3"> 
+      <form [formGroup]="form" (submit)="onAdicionarDoacao()">
+  
+        <div class="row">
+          <mat-form-field class="col-sm">
+            <mat-label>Item Doado:</mat-label>
+            <input required type="text" matInput name="title" formControlName="title"/>
+            <mat-error *ngIf="form.get('title')">O campo não pode ser nulo.</mat-error>
+          </mat-form-field>
+        </div>
+  
+        <div class="row">
+          <mat-form-field class="col-sm">
+            <mat-label>Descrição:</mat-label>
+            <input required type="text" matInput name="description" formControlName="description" />
+            <mat-error *ngIf="form.get('description')">O campo não pode ser nulo.</mat-error>
+          </mat-form-field>
+        </div>
+    
+        <button class="mat-focus-indicator mat-raised-button mat-button-base mat-primary btn-cadastro" mat-raised-button (click)="showMe()">
+          Confirmar
+        </button>
+      </form>
+
+       
+    </mat-card>
+  </div>
+  
+  <div class="row mt-2 mb-3">
+    <app-lista-doacao ></app-lista-doacao>
+  </div>
+
+  <div class="row">
+    <button class="btn btn-chat" (click)="gotoChat()">Chat</button>
+  </div>
+  
+</div>

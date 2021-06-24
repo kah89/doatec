@@ -1,0 +1,67 @@
+<div class="container cardForm">
+  <div class="row m-2">
+    <h3 class="text-center textCardForm">Você está a um passo de ajudar alguém</h3>
+  </div>
+  <mat-card>
+    <form [formGroup]="form" (submit)="onSalvarCliente()">
+      <mat-form-field>
+        <input type="text"
+        matInput
+        placeholder="Nome"
+        formControlName="firstName"
+        name="firstName"/>
+        <mat-error *ngIf="form.get('firstName').invalid">Digite um nome válido</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input type="text"
+        matInput
+        placeholder="Sobrenome"
+        formControlName="lastName"
+        name="lastName"/>
+        <mat-error *ngIf="form.get('lastName').invalid">Digite um sobrenome válido</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input type="text"
+        matInput
+        placeholder="E-mail"
+        formControlName="email"
+        name="email"
+        required/>
+        <mat-error *ngIf="form.get('email').invalid">Digite um e-mail válido</mat-error>
+      </mat-form-field>
+
+      <div class="row">
+        <div class="col-sm">
+          <mat-form-field>
+            <input type="password"
+            matInput
+            placeholder="Senha"
+            formControlName="password"
+            name="password"/>
+            <mat-error *ngIf="form.get('password').invalid">Digite uma senha válida (a senha deve conter no mínimo 8 caracteres)</mat-error>
+          </mat-form-field>
+        </div>
+        
+        <div class="col-sm">
+          <mat-form-field>
+            <input type="password"
+            matInput
+            placeholder="Confirmar Senha"
+            formControlName="senhaConfirm"
+            name="senhaConfirm"
+            required/>
+            <mat-error *ngIf="form.get('senhaConfirm').invalid">As senhas não coincidem</mat-error>
+          </mat-form-field>
+        </div>
+        
+      </div>
+
+    <button mat-raised-button="mat-raised-button" class="btn-cadastro">
+      Salvar
+    </button>
+    </form>
+  </mat-card>
+
+</div>

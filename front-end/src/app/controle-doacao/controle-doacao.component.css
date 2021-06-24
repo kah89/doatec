@@ -1,0 +1,36 @@
+table {
+    width: 70%;
+    align-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+.header {
+    min-height: 64px;
+    padding: 8px 24px 0;
+}
+
+mat-cell {
+    display: flex !important;
+    justify-content: center!important;
+}
+
+mat-header-cell {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-chat-ong {
+   position: relative !important;
+    padding: 10px;
+    font-size: 25px;
+    width: 10%;
+    background: #191970;
+    color: #fff;
+    border: 2px solid;
+    margin-left: 80%;
+}

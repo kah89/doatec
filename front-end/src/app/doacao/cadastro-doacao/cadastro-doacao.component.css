@@ -1,0 +1,24 @@
+mat-form-field, input {
+    width: 100%;
+  }
+
+.btn-cadastro {
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #4682B4;
+    font-weight: bold;
+    color: #ffff;
+}
+
+.btn-chat {
+    position: relative;
+    padding: 10px;
+    font-size: 25px;
+    width: 10%;
+    background: #191970;
+    color: #fff;
+    border: 2px solid;
+    margin-left: 80%;
+}

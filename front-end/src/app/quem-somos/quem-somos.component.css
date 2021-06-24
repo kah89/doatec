@@ -1,0 +1,15 @@
+.container {
+    margin: 50px 100px 10px 100px;
+    padding: 10px;
+}
+.box {
+    margin: 20px 100px 40px 100px;
+    padding: 10px;
+    background: #d8d8d8;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+}
+
+.box h3 {
+    border-bottom: 2px solid #333;
+}

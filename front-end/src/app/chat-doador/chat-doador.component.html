@@ -1,0 +1,53 @@
+<div id="container">
+    <form name="message" action="" (ngSubmit)='chatdoador()' [formGroup]='formDoador'>
+        <main>
+            <header>
+                <div>
+                    <h2>Chat - Ong </h2>
+                    <h3>numero de mensagens</h3>
+                </div>
+            </header>
+            <ul id="chat">
+                <li class="you">
+                    <div class="entete">
+                        <span class="status green"></span>
+                        <h2>Cliente</h2>
+                        <h3>horario, dia da semana</h3>
+                    </div>
+                    <div class="triangle"></div>
+                    <div class="message">
+                        mensagem........
+                    </div>
+                </li>
+                <li class="me">
+                    <div class="entete">
+                        <h3>horario, dia da semana</h3>
+                        <h2>Ong</h2>
+                        <span class="status blue"></span>
+                    </div>
+                    <div class="triangle"></div>
+                    <div class="message">
+                        mensagem ............
+                    </div>
+                </li>
+                <li class="me">
+                    <div class="entete">
+                        <h3>horario, dia da semana</h3>
+                        <h2>Ong</h2>
+                        <span class="status blue"></span>
+                    </div>
+                    <div class="triangle"></div>
+                    <div class="message">
+                        mensagem.....
+                    </div>
+                </li>
+            </ul>
+            <footer>
+                <textarea>Digite sua mensagem</textarea>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_picture.png" alt="">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_file.png" alt="">
+                <input name="submitmsg" type="submit" id="submitmsg" value="Enviar" />
+            </footer>
+        </main>
+    </form>
+</div>

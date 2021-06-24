@@ -1,0 +1,54 @@
+<div class="container">
+    <h3 class="text-center mt-3 mb-3">Quem está ajudando</h3>
+<div class="container mat-elevation-z8 mt-3 mb-3">
+
+    <div class="header">
+        <mat-form-field>
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Código" />
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Status" />
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Nome Doador" />
+        </mat-form-field>
+
+    </div>
+
+    <mat-table #table [dataSource]="dataSource" class="mb-3">
+        <ng-container matColumnDef="cod">
+            <mat-header-cell *matHeaderCellDef> Cód. </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.cod}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="doador">
+            <mat-header-cell *matHeaderCellDef> Doador </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.doador}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="status">
+            <mat-header-cell *matHeaderCellDef> Status </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.status}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="data_ret">
+            <mat-header-cell *matHeaderCellDef> Data Retirada </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.data_ret}} </mat-cell>
+        </ng-container>
+
+        <mat-header-row mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+    </mat-table>
+
+</div>
+    <div class="row">
+        <button class="btn btn-chat-ong" (click)="gotoChatOng()">Chat</button>
+    </div> 
+</div>
+
+
+
+

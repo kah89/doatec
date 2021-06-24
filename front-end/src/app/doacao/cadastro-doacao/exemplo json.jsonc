@@ -1,0 +1,32 @@
+{
+    "computer": {
+      "title": "stringtesteeeeee",
+      "description": "stringaloooooooou"
+    },
+    "address": "stringquebagulhochatomeudeus"
+}
+// CRIAR DOADOR
+{
+    "firstName": "Teste",
+    "lastName": "doador",
+    "email": "doador@teste.com",
+    "password": "doador123",
+    "isAdmin": false //FALSE POIS TRUE É APENAS PARA ONG
+}
+
+// CRIAR ONG
+{
+    "firstName": "Ong",
+    "lastName": "do amanha",
+    "email": "ong@teste.com",
+    "password": "ong12345",
+    "isAdmin": true
+}
+
+{
+    "computer": {
+      "title": "Ai meu deus eu não aguento mais",
+      "description": "Gzuis me salva"
+    },
+    "address": "Nada mais ta dando certo"
+  }
